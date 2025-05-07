@@ -102,16 +102,71 @@
                 transform: translateY(0px);
             }
         }
+
+        use {
+            animation: move-forever 60s linear infinite;
+            opacity: .1;
+        }
+
+        use:nth-child(2) {
+            animation-duration: 30s;
+            animation-delay: -1.5s;
+            opacity: .2;
+        }
+
+        use:nth-child(1) {
+            animation-duration: 45s;
+            opacity: .1;
+        }
+
+        @keyframes move-forever {
+            0% {
+                transform: translate(-2px, 0);
+            }
+
+            100% {
+                transform: translate(0px, 0);
+            }
+        }
+
+        .wave {
+            position: absolute;
+            bottom: -10px;
+            z-index: -1;
+        }
+
+        svg {
+            width: 100vw;
+            height: 30vh;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="brand">
-            <img src="logo.png" alt="North Current Logo" class="logo">
+
+    <body>
+        <div class="wave"><svg viewBox="0 0 2 1" preserveAspectRatio="none">
+                <defs>
+                    <path id="w" d="
+             m0 1v-.5 
+             q.5.5 1 0
+             t1 0 1 0 1 0
+             v.5z" />
+                </defs>
+                <g>
+                    <use href="#w" y=".0" fill="#20386d" />
+                    <use href="#w" y=".1" fill="#65bffc" />
+                    <use href="#w" y=".2" fill="#038bfc" />
+
+                </g>
+            </svg>
         </div>
-        <h2>Made for the moment</h2>
-    </div>
-</body>
+        <div class="container">
+            <div class="brand">
+                <img src="logo.png" alt="North Current Logo" class="logo">
+            </div>
+            <h2>Made for the moment</h2>
+        </div>
+    </body>
 
 </html>
