@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Current Co. - Coming Soon</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Light and dark favicons -->
+    <link rel="icon" type="image/png" href="favicon-light.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="favicon-dark.png" media="(prefers-color-scheme: dark)">
+
     <style>
         @font-face {
             font-family: 'Gotham';
@@ -18,13 +22,13 @@
             margin: 0;
             padding: 0;
             font-family: 'Gotham', sans-serif;
-            background: #f9f6f2;
+            background: #eaeaea;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             text-align: center;
-            color: #111;
+            color: #363f60;
             overflow: hidden;
         }
 
@@ -43,14 +47,9 @@
         }
 
         .logo {
-            width: 400px;
-            height: auto;
+            width: auto;
+            height: 300px;
             animation: float 4s ease-in-out infinite;
-        }
-
-        .brand-name {
-            font-size: 1.5rem;
-            font-weight: 600;
         }
 
         h2 {
@@ -62,7 +61,6 @@
 
         p {
             font-size: 1.2rem;
-            color: #333;
             margin: 0;
             animation: fadeIn 3s ease-in;
         }
@@ -116,7 +114,7 @@
 
         use:nth-child(1) {
             animation-duration: 45s;
-            opacity: .1;
+            opacity: .3;
         }
 
         @keyframes move-forever {
@@ -143,30 +141,28 @@
 </head>
 
 <body>
-
-    <body>
-        <div class="wave"><svg viewBox="0 0 2 1" preserveAspectRatio="none">
-                <defs>
-                    <path id="w" d="
-             m0 1v-.5 
-             q.5.5 1 0
-             t1 0 1 0 1 0
-             v.5z" />
-                </defs>
-                <g>
-                    <use href="#w" y=".0" fill="#20386d" />
-                    <use href="#w" y=".1" fill="#65bffc" />
-                    <use href="#w" y=".2" fill="#038bfc" />
-
-                </g>
-            </svg>
+    <div class="wave">
+        <svg viewBox="0 0 2 1" preserveAspectRatio="none">
+            <defs>
+                <path id="w" d="
+          M0 1v-.5 
+          q.5.5 1 0
+          t1 0 1 0 1 0
+          v.5z" />
+            </defs>
+            <g>
+                <use href="#w" y=".0" fill="#d8d8d8" />
+                <use href="#w" y=".1" fill="#cccccc" />
+                <use href="#w" y=".2" fill="#b7b7b7" />
+            </g>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="brand">
+            <img src="logo.png" alt="North Current Logo" class="logo">
         </div>
-        <div class="container">
-            <div class="brand">
-                <img src="logo.png" alt="North Current Logo" class="logo">
-            </div>
-            <h2>Made for the moment</h2>
-        </div>
-    </body>
+        <h2>Made for the moment</h2>
+    </div>
+</body>
 
 </html>
