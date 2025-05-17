@@ -1,0 +1,126 @@
+:root {
+  --navy: #363f60;
+  --mist: #eaebec;
+  --shell: #f9f8f4;
+  --bay: #bac9d4;
+  --pine: #374b4a;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("https://cdn.jsdelivr.net/gh/ethercreative/fonts@latest/gotham/Gotham-Book.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham", sans-serif;
+  background: var(--mist);
+  color: var(--navy);
+  overflow-x: hidden;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.topbar img {
+  height: 65px;
+}
+
+.topbar a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.topbar a:hover {
+  color: var(--pine);
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-top: 2rem;
+  color: var(--navy);
+}
+
+p {
+  font-size: 1.125rem;
+  margin: 1rem 0;
+  color: var(--navy);
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--pine);
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: #e0e0e0;
+  font-size: 0.875rem;
+  color: var(--navy);
+}
+
+footer a {
+  margin: 0 0.5rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--pine);
+  text-decoration: underline;
+}
+
+.wave {
+  position: absolute;
+  bottom: -10px;
+  z-index: -1;
+}
+
+svg {
+  width: 100vw;
+  height: 30vh;
+}
