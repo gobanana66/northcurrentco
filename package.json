@@ -1,0 +1,15 @@
+{
+    "name": "northcurrentco",
+    "version": "1.0.0",
+    "description": "North Current Co. static site built with Eleventy",
+    "scripts": {
+        "build": "eleventy",
+        "start": "eleventy --serve"
+    },
+    "keywords": ["eleventy", "11ty", "static site", "north current", "netlify"],
+    "author": "Anna Klibanov",
+    "license": "MIT",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.1"
+    }
+}

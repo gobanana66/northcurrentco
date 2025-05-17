@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Current Co. - {{ title }}</title>
+
+    <!-- Light and dark favicons -->
+    <link rel="icon" type="image/png" href="/assets/favicon-light.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="/assets/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="/assets/style.css">
+
+  </head>
+  <body>
+    <div class="topbar">
+      <a href="/"><img src="/assets/logo-horizontal.png" alt="North Current Logo"></a>
+      <a href="https://www.etsy.com/ca/shop/northcurrentco" target="_blank" rel="noopener">Shop on Etsy</a>
+    </div>
+    <div class="container">
+      {{ content | safe }}
+    </div>
+    <footer>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/faq">FAQ</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/shipping-returns">Shipping & Returns</a>
+      <a href="/contact">Contact</a>
+    </footer>
+  </body>
+</html>

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Current Co. - Coming Soon</title>
+    <link rel="stylesheet" href="/assets/style.css">
 
     <!-- Light and dark favicons -->
-    <link rel="icon" type="image/png" href="favicon-light.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" href="favicon-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="/assets/favicon-light.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="/assets/favicon-dark.png" media="(prefers-color-scheme: dark)">
 
     <style>
         @font-face {
@@ -137,10 +138,46 @@
             width: 100vw;
             height: 30vh;
         }
+
+        footer {
+            position: absolute;
+            top: 0;
+            background: none;
+        }
+
+        .cta-button {
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #363f60;
+            /* Navy */
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 2px solid #363f60;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover,
+        .cta-button:focus {
+            background-color: #1d2545;
+            /* darker navy */
+            color: #ffffff;
+            outline: none;
+        }
     </style>
 </head>
 
 <body>
+    <footer>
+        <a href="/about">About</a>
+        <a href="/faq">FAQ</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/shipping-returns">Shipping & Returns</a>
+        <a href="/contact">Contact</a>
+    </footer>
     <div class="wave">
         <svg viewBox="0 0 2 1" preserveAspectRatio="none">
             <defs>
@@ -157,12 +194,16 @@
             </g>
         </svg>
     </div>
-    <div class="container">
+    <div class="">
         <div class="brand">
-            <img src="logo.png" alt="North Current Logo" class="logo">
+            <img src="/assets/logo.png" alt="North Current Logo" class="logo">
         </div>
         <h2>Made for the moment</h2>
+        <a class="cta-button" href="https://www.etsy.com/ca/shop/northcurrentco" target="_blank" rel="noopener">Shop on
+            Etsy</a>
+
     </div>
+
 </body>
 
 </html>
